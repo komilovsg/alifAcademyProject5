@@ -1,0 +1,110 @@
+ul li {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: left;
+  color: #828a99;
+}
+
+.headerFooter {
+  padding: 50px 200px;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 51.2px;
+  text-align: left;
+  color: #000;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contentHeader {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+ul {
+  display: flex;
+  padding: 50px 200px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.blackColor {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25.6px;
+  text-align: left;
+  color: #000;
+}
+
+.contentAll {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contentSome {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.conteBottom {
+  display: flex;
+  padding: 20px 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textContent p {
+  color: #828a99;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+}
+
+.textContent a {
+  color: #828a99;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+}
+
+.textContent {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.contentImgTxt {
+  display: flex;
+  align-items: center;
+  color: #828a99;
+  font-family: "Noto Sans", sans-serif;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.hrFooter {
+  border: 1px solid #ebebf0;
+}
