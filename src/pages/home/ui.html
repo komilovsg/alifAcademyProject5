@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Северяночка</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "custom-image": "url('../../shared/images/Group_7100.png')",
+            },
+            screens: {
+              lg: "1440px",
+              md: "768px",
+              sm: "360px",
+            },
+            fontFamily: {
+              sans: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="">
+    <header class="text-gray-600 body-font shadow-md p-4">
+      <div
+        class="container mx-auto flex flex-wrap justify-center gap-10 w-[1208px]"
+      >
+        <div class="flex items-center gap-5">
+          <a
+            class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+          >
+            <img
+              src="../../shared/icons/logo.png"
+              alt="logo"
+              class="w-[152px] h-[32px]"
+            />
+          </a>
+          <button class="border px-3 rounded text-white bg-[#70C05B]">
+            Каталог
+          </button>
+          <div class="relative">
+            <input type="search" class="border rounded px-2 border-[#70C05B]" />
+            <img
+              src="../../shared/icons/search.png"
+              alt="searchIcon"
+              class="absolute -translate-y-6 right-0 w-[16px] h-[16px] mt-1 mr-2"
+            />
+          </div>
+        </div>
+        <nav class="flex flex-wrap items-center text-base">
+          <a
+            class="mr-5 hover:text-gray-900 flex flex-col justify-center items-center"
+          >
+            <img src="../../shared/icons/favorites.png" alt="" />
+            <span>Избранное</span>
+          </a>
+          <a
+            class="mr-5 hover:text-gray-900 flex flex-col justify-center items-center"
+          >
+            <img src="../../shared/icons/orders.png" alt="" />
+            <span>Заказы</span>
+          </a>
+          <a
+            class="mr-5 hover:text-gray-900 flex flex-col justify-center items-center"
+          >
+            <img src="../../shared/icons/shopping-cart.png" alt="" />
+            <span>Корзина</span>
+          </a>
+        </nav>
+        <div class="flex items-center gap-5">
+          <img
+            src="../../shared/icons/avatar.png"
+            alt="avatar"
+            class="w-[40px] h-[40px]"
+          />
+          <p class="md:block hidden">Алексей</p>
+          <img
+            src="../../shared/icons/chevron-down.png"
+            alt="chevronDown"
+            class="md:block hidden"
+          />
+        </div>
+      </div>
+    </header>
+    <section class="bg-custom-image flex justify-center items-center">
+      <img
+        src="../../shared/images/content-1208x200.png"
+        alt="imgAndText"
+        class="w-[70%]"
+      />
+    </section>
+    <section class="text-gray-600 body-font bg-[#FBF8ED]">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap justify-between w-full mb-20">
+          <div class="">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+            >
+              Акции
+            </h1>
+          </div>
+          <div class="flex items-center">
+            <p class="text-gray-500">Все акции</p>
+            <img
+              src="../../shared/icons/chevron-down.png"
+              alt="chevron-down"
+              class="-rotate-90"
+            />
+          </div>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="rounded-lg p-1 shadow-md bg-white relative">
+              <img
+                class="h-auto rounded w-full object-cover object-center mb-6"
+                src="../../shared/images/imagebrackfast.png"
+                alt="content"
+              />
+              <img
+                src="../../shared/icons/favorites.png"
+                alt=""
+                class="absolute w-[32px] h-[32px] top-0 right-0"
+              />
+              <div class="mb-2">
+                <div class="flex justify-between">
+                  <h2 class="text-lg text-gray-900 font-medium title-font">
+                    44,50 ₽
+                  </h2>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="flex justify-between">
+                  <p class="">C картой</p>
+                  <p class="">Обычная</p>
+                </div>
+              </div>
+              <p class="leading-relaxed text-base">
+                Г/Ц Блинчики с мясом вес, Россия
+              </p>
+              <div class="flex gap-2 mt-5">
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+              </div>
+              <button
+                class="border border-[#70C05B] w-full p-[8px] rounded text-[#70C05B] mt-[8px]"
+              >
+                В корзину
+              </button>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="rounded-lg p-1 shadow-md bg-white relative">
+              <img
+                class="h-auto rounded w-full mb-6"
+                src="../../shared/images/imageMilk.png"
+                alt="content"
+              />
+              <img
+                src="../../shared/icons/favorites.png"
+                alt=""
+                class="absolute w-[32px] h-[32px] top-0 right-0"
+              />
+              <div class="mb-2">
+                <div class="flex justify-between">
+                  <h2 class="text-lg text-gray-900 font-medium title-font">
+                    44,50 ₽
+                  </h2>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="flex justify-between">
+                  <p class="">C картой</p>
+                  <p class="">Обычная</p>
+                </div>
+              </div>
+              <p class="leading-relaxed text-base">
+                Г/Ц Блинчики с мясом вес, Россия
+              </p>
+              <div class="flex gap-2 mt-5">
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+              </div>
+              <button
+                class="border border-[#70C05B] w-full p-[8px] rounded text-[#70C05B] mt-[8px]"
+              >
+                В корзину
+              </button>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="rounded-lg p-1 shadow-md bg-white relative">
+              <img
+                class="h-auto rounded w-full object-cover object-center mb-6"
+                src="../../shared/images/imageKolbasa.png"
+                alt="content"
+              />
+              <img
+                src="../../shared/icons/favorites.png"
+                alt=""
+                class="absolute w-[32px] h-[32px] top-0 right-0"
+              />
+              <div class="mb-2">
+                <div class="flex justify-between">
+                  <h2 class="text-lg text-gray-900 font-medium title-font">
+                    44,50 ₽
+                  </h2>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="flex justify-between">
+                  <p class="">C картой</p>
+                  <p class="">Обычная</p>
+                </div>
+              </div>
+              <p class="leading-relaxed text-base">
+                Г/Ц Блинчики с мясом вес, Россия
+              </p>
+              <div class="flex gap-2 mt-5">
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+              </div>
+              <button
+                class="border border-[#70C05B] w-full p-[8px] rounded text-[#70C05B] mt-[8px]"
+              >
+                В корзину
+              </button>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="rounded-lg p-1 shadow-md bg-white relative">
+              <img
+                class="h-auto rounded w-full object-cover object-center mb-6"
+                src="../../shared/images/imageSosiski.png"
+                alt="content"
+              />
+              <img
+                src="../../shared/icons/favorites.png"
+                alt=""
+                class="absolute w-[32px] h-[32px] top-0 right-0"
+              />
+              <div class="mb-2">
+                <div class="flex justify-between">
+                  <h2 class="text-lg text-gray-900 font-medium title-font">
+                    44,50 ₽
+                  </h2>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="flex justify-between">
+                  <p class="">C картой</p>
+                  <p class="">Обычная</p>
+                </div>
+              </div>
+              <p class="leading-relaxed text-base">
+                Г/Ц Блинчики с мясом вес, Россия
+              </p>
+              <div class="flex gap-2 mt-5">
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+              </div>
+              <button
+                class="border border-[#70C05B] w-full p-[8px] rounded text-[#70C05B] mt-[8px]"
+              >
+                В корзину
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-600 body-font bg-[#FBF8ED]">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap justify-between w-full mb-20">
+          <div class="">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+            >
+              Новинки
+            </h1>
+          </div>
+          <div class="flex items-center">
+            <p class="text-gray-500">Все Новинки</p>
+            <img
+              src="../../shared/icons/chevron-down.png"
+              alt="chevron-down"
+              class="-rotate-90"
+            />
+          </div>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="rounded-lg p-1 shadow-md bg-white relative">
+              <img
+                class="h-auto rounded w-full object-cover object-center mb-6"
+                src="../../shared/images/imagebrackfast.png"
+                alt="content"
+              />
+              <img
+                src="../../shared/icons/favorites.png"
+                alt=""
+                class="absolute w-[32px] h-[32px] top-0 right-0"
+              />
+              <div class="mb-2">
+                <div class="flex justify-between">
+                  <h2 class="text-lg text-gray-900 font-medium title-font">
+                    44,50 ₽
+                  </h2>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="flex justify-between">
+                  <p class="">C картой</p>
+                  <p class="">Обычная</p>
+                </div>
+              </div>
+              <p class="leading-relaxed text-base">
+                Г/Ц Блинчики с мясом вес, Россия
+              </p>
+              <div class="flex gap-2 mt-5">
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+              </div>
+              <button
+                class="border border-[#70C05B] w-full p-[8px] rounded text-[#70C05B] mt-[8px]"
+              >
+                В корзину
+              </button>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="rounded-lg p-1 shadow-md bg-white relative">
+              <img
+                class="h-auto rounded w-full mb-6"
+                src="../../shared/images/imageMilk.png"
+                alt="content"
+              />
+              <img
+                src="../../shared/icons/favorites.png"
+                alt=""
+                class="absolute w-[32px] h-[32px] top-0 right-0"
+              />
+              <div class="mb-2">
+                <div class="flex justify-between">
+                  <h2 class="text-lg text-gray-900 font-medium title-font">
+                    44,50 ₽
+                  </h2>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="flex justify-between">
+                  <p class="">C картой</p>
+                  <p class="">Обычная</p>
+                </div>
+              </div>
+              <p class="leading-relaxed text-base">
+                Г/Ц Блинчики с мясом вес, Россия
+              </p>
+              <div class="flex gap-2 mt-5">
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+              </div>
+              <button
+                class="border border-[#70C05B] w-full p-[8px] rounded text-[#70C05B] mt-[8px]"
+              >
+                В корзину
+              </button>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="rounded-lg p-1 shadow-md bg-white relative">
+              <img
+                class="h-auto rounded w-full object-cover object-center mb-6"
+                src="../../shared/images/imageKolbasa.png"
+                alt="content"
+              />
+              <img
+                src="../../shared/icons/favorites.png"
+                alt=""
+                class="absolute w-[32px] h-[32px] top-0 right-0"
+              />
+              <div class="mb-2">
+                <div class="flex justify-between">
+                  <h2 class="text-lg text-gray-900 font-medium title-font">
+                    44,50 ₽
+                  </h2>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="flex justify-between">
+                  <p class="">C картой</p>
+                  <p class="">Обычная</p>
+                </div>
+              </div>
+              <p class="leading-relaxed text-base">
+                Г/Ц Блинчики с мясом вес, Россия
+              </p>
+              <div class="flex gap-2 mt-5">
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+              </div>
+              <button
+                class="border border-[#70C05B] w-full p-[8px] rounded text-[#70C05B] mt-[8px]"
+              >
+                В корзину
+              </button>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="rounded-lg p-1 shadow-md bg-white relative">
+              <img
+                class="h-auto rounded w-full object-cover object-center mb-6"
+                src="../../shared/images/imageSosiski.png"
+                alt="content"
+              />
+              <img
+                src="../../shared/icons/favorites.png"
+                alt=""
+                class="absolute w-[32px] h-[32px] top-0 right-0"
+              />
+              <div class="mb-2">
+                <div class="flex justify-between">
+                  <h2 class="text-lg text-gray-900 font-medium title-font">
+                    44,50 ₽
+                  </h2>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="flex justify-between">
+                  <p class="">C картой</p>
+                  <p class="">Обычная</p>
+                </div>
+              </div>
+              <p class="leading-relaxed text-base">
+                Г/Ц Блинчики с мясом вес, Россия
+              </p>
+              <div class="flex gap-2 mt-5">
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+              </div>
+              <button
+                class="border border-[#70C05B] w-full p-[8px] rounded text-[#70C05B] mt-[8px]"
+              >
+                В корзину
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-600 body-font bg-[#FBF8ED]">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap justify-between w-full mb-20">
+          <div class="">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+            >
+              Покупали раньше
+            </h1>
+          </div>
+          <div class="flex items-center">
+            <p class="text-gray-500">Все покупки</p>
+            <img
+              src="../../shared/icons/chevron-down.png"
+              alt="chevron-down"
+              class="-rotate-90"
+            />
+          </div>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="rounded-lg p-1 shadow-md bg-white relative">
+              <img
+                class="h-auto rounded w-full object-cover object-center mb-6"
+                src="../../shared/images/imagebrackfast.png"
+                alt="content"
+              />
+              <img
+                src="../../shared/icons/favorites.png"
+                alt=""
+                class="absolute w-[32px] h-[32px] top-0 right-0"
+              />
+              <div class="mb-2">
+                <div class="flex justify-between">
+                  <h2 class="text-lg text-gray-900 font-medium title-font">
+                    44,50 ₽
+                  </h2>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="flex justify-between">
+                  <p class="">C картой</p>
+                  <p class="">Обычная</p>
+                </div>
+              </div>
+              <p class="leading-relaxed text-base">
+                Г/Ц Блинчики с мясом вес, Россия
+              </p>
+              <div class="flex gap-2 mt-5">
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+              </div>
+              <button
+                class="border border-[#70C05B] w-full p-[8px] rounded text-[#70C05B] mt-[8px]"
+              >
+                В корзину
+              </button>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="rounded-lg p-1 shadow-md bg-white relative">
+              <img
+                class="h-auto rounded w-full mb-6"
+                src="../../shared/images/imageMilk.png"
+                alt="content"
+              />
+              <img
+                src="../../shared/icons/favorites.png"
+                alt=""
+                class="absolute w-[32px] h-[32px] top-0 right-0"
+              />
+              <div class="mb-2">
+                <div class="flex justify-between">
+                  <h2 class="text-lg text-gray-900 font-medium title-font">
+                    44,50 ₽
+                  </h2>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="flex justify-between">
+                  <p class="">C картой</p>
+                  <p class="">Обычная</p>
+                </div>
+              </div>
+              <p class="leading-relaxed text-base">
+                Г/Ц Блинчики с мясом вес, Россия
+              </p>
+              <div class="flex gap-2 mt-5">
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+              </div>
+              <button
+                class="border border-[#70C05B] w-full p-[8px] rounded text-[#70C05B] mt-[8px]"
+              >
+                В корзину
+              </button>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="rounded-lg p-1 shadow-md bg-white relative">
+              <img
+                class="h-auto rounded w-full object-cover object-center mb-6"
+                src="../../shared/images/imageKolbasa.png"
+                alt="content"
+              />
+              <img
+                src="../../shared/icons/favorites.png"
+                alt=""
+                class="absolute w-[32px] h-[32px] top-0 right-0"
+              />
+              <div class="mb-2">
+                <div class="flex justify-between">
+                  <h2 class="text-lg text-gray-900 font-medium title-font">
+                    44,50 ₽
+                  </h2>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="flex justify-between">
+                  <p class="">C картой</p>
+                  <p class="">Обычная</p>
+                </div>
+              </div>
+              <p class="leading-relaxed text-base">
+                Г/Ц Блинчики с мясом вес, Россия
+              </p>
+              <div class="flex gap-2 mt-5">
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+              </div>
+              <button
+                class="border border-[#70C05B] w-full p-[8px] rounded text-[#70C05B] mt-[8px]"
+              >
+                В корзину
+              </button>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="rounded-lg p-1 shadow-md bg-white relative">
+              <img
+                class="h-auto rounded w-full object-cover object-center mb-6"
+                src="../../shared/images/imageSosiski.png"
+                alt="content"
+              />
+              <img
+                src="../../shared/icons/favorites.png"
+                alt=""
+                class="absolute w-[32px] h-[32px] top-0 right-0"
+              />
+              <div class="mb-2">
+                <div class="flex justify-between">
+                  <h2 class="text-lg text-gray-900 font-medium title-font">
+                    44,50 ₽
+                  </h2>
+                  <p>50,50 ₽</p>
+                </div>
+                <div class="flex justify-between">
+                  <p class="">C картой</p>
+                  <p class="">Обычная</p>
+                </div>
+              </div>
+              <p class="leading-relaxed text-base">
+                Г/Ц Блинчики с мясом вес, Россия
+              </p>
+              <div class="flex gap-2 mt-5">
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starOrange.png"
+                  alt="stars"
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+                <img
+                  src="../../shared/icons/starGrey.png"
+                  alt=""
+                  class="w-[16px] h-[16px]"
+                />
+              </div>
+              <button
+                class="border border-[#70C05B] w-full p-[8px] rounded text-[#70C05B] mt-[8px]"
+              >
+                В корзину
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-600 body-font bg-[#FBF8ED]">
+      <div class="container px-5 py-24 mx-auto">
+        <h1
+          class="text-3xl font-medium title-font text-gray-900 mb-12 text-start"
+        >
+          Специальные предложения
+        </h1>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 md:w-1/2 w-full">
+            <div
+              class="flex justify-around items-center bg-[#FCD5BA] color-[#414141] rounded shadow-md p-5"
+            >
+              <div>
+                <h2 class="text-[24px] font-bold">
+                  Оформите карту <br />
+                  «Северяночка»
+                </h2>
+                <p>
+                  И получайте бонусы при покупке <br />
+                  в магазинах и на сайте
+                </p>
+              </div>
+              <img
+                src="../../shared/images/LoyltiCard.png"
+                alt="loyltiCard"
+                width="277.78"
+                height="186"
+              />
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2 w-full">
+            <div
+              class="flex justify-around items-center bg-[#E5FFDE] color-[#414141] rounded shadow-md p-4 relative"
+            >
+              <img
+                src="../../shared/icons/plusred.png"
+                alt="plus"
+                class="absolute w-3 top-0 mt-2 -translate-x-32"
+              />
+              <img
+                src="../../shared/icons/plusred.png"
+                alt="plus"
+                class="absolute w-3 bottom-0 left-0 ml-5 mb-5"
+              />
+              <div>
+                <h2 class="text-[24px] font-bold">
+                  Покупайте <br />
+                  акционные товары
+                </h2>
+                <p>
+                  И получайте вдвое больше <br />
+                  бонусов
+                </p>
+              </div>
+              <div class="">
+                <img
+                  src="../../shared/images/RedBox.png"
+                  alt="loyltiCard"
+                  width="193"
+                  height="186"
+                  class="z-10 relative"
+                />
+                <img
+                  src="../../shared/icons/russianCurrensi.png"
+                  alt="ruble"
+                  class="absolute z-0 top-0 w-10 translate-y-8"
+                />
+                <img
+                  src="../../shared/icons/russianCurrensi.png"
+                  alt="ruble"
+                  class="absolute z-0 top-0 w-10 translate-y-8 translate-x-40"
+                />
+                <img
+                  src="../../shared/icons/plusred.png"
+                  alt="ruble"
+                  class="absolute z-0 bottom-0 w-10 -translate-y-16 translate-x-40"
+                />
+                <img
+                  src="../../shared/icons/russianCurrensi.png"
+                  alt="ruble"
+                  class="absolute z-0 bottom-0 w-6 -translate-y-10 translate-x-36"
+                />
+                <img
+                  src="../../shared/icons/plusred.png"
+                  alt="ruble"
+                  class="absolute z-0 bottom-0 w-10 -translate-y-20 -translate-x-4"
+                />
+                <img
+                  src="../../shared/icons/russianCurrensi.png"
+                  alt="ruble"
+                  class="absolute z-0 bottom-0 w-6 -translate-y-10 translate-x-3"
+                />
+                <img
+                  src="../../shared/icons/plusred.png"
+                  alt="ruble"
+                  class="absolute z-0 bottom-0 right-0 w-4 -translate-y-4 -translate-x-3"
+                />
+                <img
+                  src="../../shared/icons/plusred.png"
+                  alt="ruble"
+                  class="absolute z-0 bottom-0 right-0 w-2 -translate-y-8 -translate-x-40"
+                />
+                <img
+                  src="../../shared/icons/plusred.png"
+                  alt="ruble"
+                  class="absolute z-0 bottom-0 w-2 -translate-y-8 -translate-x-7"
+                />
+                <img
+                  src="../../shared/icons/plusred.png"
+                  alt="ruble"
+                  class="absolute z-0 top-0 right-0 w-2 translate-y-4 -translate-x-20"
+                />
+                <img
+                  src="../../shared/icons/plusred.png"
+                  alt="ruble"
+                  class="absolute z-0 top-0 right-0 w-5 translate-y-6 -translate-x-40"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MAP -->
+    <section class="bg-[#FBF8ED]">
+      <div class="container mx-auto p-10">
+        <h1>Наши магазины</h1>
+        <div class="flex flex-wrap items-center gap-5 my-2">
+          <button
+            onclick="updateMapLocation('п.Щульяюр')"
+            id="btn-Щульяюр"
+            class="location-btn text-white bg-green-500 border rounded px-3 py-1"
+          >
+            п.Щульяюр
+          </button>
+          <button
+            onclick="updateMapLocation('д.Вертеп')"
+            id="btn-Вертеп"
+            class="location-btn bg-[#F3F2F1] border rounded px-3 py-1"
+          >
+            д.Вертеп
+          </button>
+          <button
+            onclick="updateMapLocation('с.Краснобор')"
+            id="btn-Краснобор"
+            class="location-btn bg-[#F3F2F1] border rounded px-3 py-1"
+          >
+            с.Краснобор
+          </button>
+          <button
+            onclick="updateMapLocation('д.Диюр')"
+            id="btn-Диюр"
+            class="location-btn bg-[#F3F2F1] border rounded px-3 py-1"
+          >
+            д.Диюр
+          </button>
+        </div>
+
+        <div
+          class="text-gray-600 body-font relative shadow-md"
+          style="height: 400px"
+        >
+          <div class="absolute inset-0 bg-gray-300">
+            <iframe
+              id="mapIframe"
+              width="100%"
+              height="100%"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              title="map"
+              scrolling="no"
+              src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Щульяюр&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-gray-600 body-font bg-[#FBF8ED]">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col">
+          <div
+            class="flex flex-wrap justify-between sm:flex-row flex-col py-6 mb-12"
+          >
+            <h1
+              class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0"
+            >
+              Статьи
+            </h1>
+            <div class="flex items-center">
+              <p class="text-gray-500">Все статьи</p>
+              <img
+                src="../../shared/icons/chevron-down.png"
+                alt="chevron-down"
+                class="-rotate-90"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-between gap-2">
+          <div class="p-4 w-[376px] h-auto shadow-md rounded bg-white">
+            <div class="rounded-lg overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover"
+                src="../../shared/images/manInRed.png"
+              />
+            </div>
+            <p class="mt-2 text-[12px]">05.03.2021</p>
+            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+              Режим использования масок и перчаток на территории магазинов
+            </h2>
+            <p class="text-base leading-relaxed mt-2">
+              Подробная информация о режимах использования масок и перчаток на
+              территории магазинов "ЛЕНТА". Информация обновляется каждый будний
+              день.
+            </p>
+            <button
+              class="px-6 py-1 border bg-[#E5FFDE] text-[14px] rounded mt-2"
+            >
+              Подробнее
+            </button>
+          </div>
+          <div class="p-4 w-[376px] h-auto shadow-md rounded bg-white">
+            <div class="rounded-lg overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover"
+                src="../../shared/images/nature.png"
+              />
+            </div>
+            <p class="mt-2 text-[12px]">05.03.2021</p>
+            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+              Весеннее настроение для каждой
+            </h2>
+            <p class="text-base leading-relaxed mt-2">
+              8 Марта – это не просто Международный женский день, это ещё день
+              тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.
+            </p>
+            <button
+              class="px-6 py-1 border bg-green-500 text-[14px] text-white rounded mt-2"
+            >
+              Подробнее
+            </button>
+          </div>
+          <div class="p-4 w-[376px] h-auto shadow-md rounded bg-white">
+            <div class="rounded-lg overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover"
+                src="../../shared/images/products.png"
+              />
+            </div>
+            <p class="mt-2 text-[12px]">05.03.2021</p>
+            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+              ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!
+            </h2>
+            <p class="text-base leading-relaxed mt-2">
+              Голосуйте за любимые категории, выбирайте категорию-победителя в
+              мобильном приложении и получайте кешбэк 10% баллами в апреле!
+            </p>
+            <button
+              class="px-6 py-1 border bg-[#E5FFDE] text-[14px] rounded mt-2"
+            >
+              Подробнее
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-gray-600 body-font bg-[#FBF8ED]">
+      <div
+        class="container px-5 py-8 mx-auto flex flex-wrap items-start justify-between"
+      >
+        <div class="flex flex-wrap items-center gap-5">
+          <a href="#" class="w-[64px] h-[44px]">
+            <img src="../../shared/icons/logoFooter.png" alt="logo" />
+          </a>
+          <div class="flex items-center gap-5">
+            <a href="#">О компании</a>
+            <a href="#">Контакты</a>
+            <a href="#">Вакансии</a>
+            <a href="#">Статьи</a>
+            <a href="#">Политика обработки персональныз данных</a>
+          </div>
+        </div>
+        <div class="flex items-start gap-5">
+          <span
+            class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+          >
+            <a class="text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                data-darkreader-inline-fill=""
+                style="--darkreader-inline-fill: currentColor"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                data-darkreader-inline-fill=""
+                style="--darkreader-inline-fill: currentColor"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                data-darkreader-inline-stroke=""
+                style="--darkreader-inline-stroke: currentColor"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                data-darkreader-inline-fill=""
+                data-darkreader-inline-stroke=""
+                style="
+                  --darkreader-inline-fill: currentColor;
+                  --darkreader-inline-stroke: currentColor;
+                "
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                  data-darkreader-inline-stroke=""
+                  style="--darkreader-inline-stroke: none"
+                ></path>
+                <circle
+                  cx="4"
+                  cy="4"
+                  r="2"
+                  stroke="none"
+                  data-darkreader-inline-stroke=""
+                  style="--darkreader-inline-stroke: none"
+                ></circle>
+              </svg>
+            </a>
+          </span>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+              <img
+                src="../../shared/icons/phone.png"
+                alt="phone"
+                width="24"
+                height="24"
+              />
+              <p>8 800 777 33 33</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <p>Дизайн</p>
+              <img
+                src="../../shared/icons/dizaynFooterText.png"
+                alt="logo"
+                width="100"
+                height="10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
