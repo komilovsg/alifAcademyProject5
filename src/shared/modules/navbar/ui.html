@@ -1,1 +1,86 @@
-<nav id="navbar"></nav>
+<nav id="navbar">
+  <section class="allContainer">
+    <div class="leftConteiner">
+      <div class="logoNav">
+        <img src="../src/shared/icons/logo-nav.png" alt="" />
+        <h3>Северяночка</h3>
+      </div>
+
+      <div class="contentRight">
+        <button class="buttonMenu">
+          <img
+            src="../src/shared/icons/menu.png"
+            alt="menu"
+            class="menuCatalog"
+            id="dialog"
+          />
+          <a href="#" data-page="category" data-module="category">Каталог</a>
+        </button>
+        <div class="inputContent">
+          <input type="text" id="searchInput" placeholder="Найти товар" />
+          <img src="../src/shared/icons/search.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="rightContainer">
+      <div class="contentIcons">
+        <p class="favorites">
+          <img src="../src/shared/icons/favorites.png" alt="" />Избранное
+        </p>
+        <p class="orders">
+          <img src="../src/shared/icons/orders.png" alt="" />Заказы
+        </p>
+
+        <div class="shoppingCart">
+          <img src="../src/shared/icons/shopping-cart.png" alt="" />
+          <p>Корзина</p>
+        </div>
+      </div>
+
+      <div class="user">
+        <p class="avatar">
+          <img src="../src/shared/icons/avatar.png" alt="" />
+          Алексей
+        </p>
+        <img src="../src/shared/icons/chevron-down.png" alt="" />
+      </div>
+    </div>
+  </section>
+</nav>
+
+<div id="catalogContainer" style="display: none">
+  <div class="catalogContentDialog">
+    <ul>
+      <a
+        href="#"
+        class="link"
+        data-page="subCategory/dairy"
+        data-module="subCategory/dairy"
+      >
+        Молоко, сыр, яйцо
+      </a>
+      <a href="#" class="link">Хлеб</a>
+      <a href="#" class="link">Фрукты и овощи</a>
+      <a href="#" class="link">Замороженные продукты</a>
+    </ul>
+
+    <ul>
+      <a href="#" class="link">Напитки</a>
+      <a href="#" class="link">Кондитерские изделия</a>
+      <a href="#" class="link">Чай, кофе</a>
+    </ul>
+
+    <ul>
+      <a href="#" class="link">Бакалея</a>
+      <a href="#" class="link">Здоровое питание</a>
+      <a href="#" class="link">Зоотовары</a>
+    </ul>
+
+    <ul>
+      <a href="#" class="link">Непродовольственные товары</a>
+      <a href="#" class="link">Детское питание</a>
+      <a href="#" class="link">Мясо, птица, колбаса</a>
+    </ul>
+  </div>
+</div>

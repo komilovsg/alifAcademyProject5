@@ -1,28 +1,20 @@
-const locations = {
-  "п.Щульяюр": "Щульяюр",
-  "д.Вертеп": "Вертеп",
-  "с.Краснобор": "Краснобор",
-  "д.Диюр": "Диюр",
-};
+export function tabs() {
+  const tabButtons = document.querySelectorAll(".tabButton");
+  const mapFrames = document.querySelectorAll(".mapFrame");
 
-// let activeLocation = "п.Щульяюр";
+  tabButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      tabButtons.forEach((btn) => btn.classList.remove("active"));
+      mapFrames.forEach((frame) => frame.classList.remove("active"));
 
-function updateMapLocation(location) {
-  const mapIframe = document.getElementById("mapIframe");
-  const query = locations[location];
-  mapIframe.src = `https://maps.google.com/maps?width=100%&height=600&hl=en&q=${encodeURIComponent(
-    query
-  )}&ie=UTF8&t=&z=14&iwloc=B&output=embed`;
-
-  setActiveButton(location);
+      button.classList.add("active");
+      const locationId = button.getAttribute("data-location");
+      const targetFrame = document.getElementById(locationId);
+      if (targetFrame) {
+        targetFrame.classList.add("active");
+      }
+    });
+  });
 }
 
-function setActiveButton(location) {
-  const currentButton = document.getElementById(`btn-${location}`);
-  currentButton.classList.remove("bg-grey-500"); // удаляем серый цвет
-  currentButton.classList.add("bg-green-500", "text-white"); // используем классы Tailwind CSS
 
-  activeLocation = location;
-}
-
-setActiveButton(activeLocation);

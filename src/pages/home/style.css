@@ -1,0 +1,235 @@
+#home {
+  padding-top: 4px;
+  background-color: #fbf8ec;
+}
+
+.bgContainer {
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.bgContainer :nth-child(1) {
+  width: 303px;
+  height: 202px;
+}
+
+.bgContainer :nth-child(2) {
+  font-family: "Rubik", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #414141;
+}
+
+.allContainerCategory {
+  padding: 80px 116px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.specialOffersContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.twoCardsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.firtsCardContent {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  background-color: #ffd5b7;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px #ca936080;
+}
+
+.firtsCardContent :nth-child(2) {
+  width: 300px;
+}
+
+.secondCardContent {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  background-color: #e5ffde;
+  border-radius: 4px;
+}
+
+.secondCardContent :nth-child(2) {
+  width: 320px;
+}
+
+.headerFirtsCardContent {
+  width: 290px;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #414141;
+  padding: 40px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.headerFirtsCardContent :nth-child(1) {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #414141;
+}
+
+.headerSpecial {
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #414141;
+}
+
+.tabButton {
+  background-color: #f3f2f1;
+  color: #333;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tabButton.active {
+  background-color: #70c05b;
+  color: white;
+}
+
+.mapFrame {
+  display: none;
+  width: 100%;
+  height: 400px;
+}
+
+.mapFrame.active {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.tabsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ourStoreContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (max-width: 1400px) {
+  .allContainerCategory {
+    padding: 60px 80px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 750px) {
+  .allContainerCategory {
+    padding: 40px 20px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 750px) {
+  .bgContainer :nth-child(2) {
+    display: none;
+  }
+
+  .mapContainer {
+    width: 600px;
+  }
+}
+
+@media (max-width: 750px) {
+  .bgContainer :nth-child(2) {
+    display: none;
+  }
+
+  .firtsCardContent {
+    width: 600px;
+  }
+
+  .firtsCardContent :nth-child(2) {
+    width: 250px;
+  }
+
+  .secondCardContent {
+    width: 600px;
+  }
+
+  .headerFirtsCardContent {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 630px) {
+  .firtsCardContent {
+    width: 400px;
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  .secondCardContent {
+    width: 400px;
+    flex-direction: column;
+  }
+
+  .headerFirtsCardContent {
+    font-size: 18px;
+    padding: 0px;
+  }
+
+  .mapContainer {
+    width: 400px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .mapContainer {
+    width: 320px;
+  }
+
+  .firtsCardContent {
+    width: 300px;
+    flex-direction: column;
+  }
+  .secondCardContent {
+    width: 300px;
+    flex-direction: column;
+  }
+
+  .allContainerCategory {
+    padding: 10px 4px;
+  }
+}

@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("../src/shared/modules/index.css");
+@import url("../src/pages/index.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+#footer {
+  background-image: url("../src/shared/images/footer-bg.png");
+}
+
+.bgContainer {
+  background-image: url("../src/shared/images/pattern_Container.png");
+}
+
+.containerCategory {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.bottomContainerCategory {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardCategory {
+  width: 272px;
+  height: 349px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.divIconsCategory {
+  padding: 4px;
+  border-radius: 4px;
+  opacity: 0.5px;
+  background-color: #eae9e964;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-left: 186px;
+  margin-top: 8px;
+}
+
+.fiftyProcent {
+  background-color: #ff6633;
+  padding: 4px 8px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 4px;
+  color: #fff;
+  position: absolute;
+  margin-top: 118px;
+  margin-left: 10px;
+}
+
+.divIconsCategory :nth-child(1) {
+  width: 24px;
+  height: 24px;
+}
+
+.mainImg {
+  width: 226px;
+  height: 160px;
+}
+
+.rightPriceContentCategory :nth-child(1) {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #414141;
+}
+
+.rightPriceContentCategory :nth-child(2) {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #bfbfbf;
+}
+
+.leftPriceContentCategory :nth-child(1) {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #606060;
+}
+
+.leftPriceContentCategory :nth-child(2) {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #bfbfbf;
+}
+
+.cardPriceContentItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardContentCategory {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.titleElem {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+
+.titleCategory {
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #414141;
+}
+
+.arrowLeftCategory {
+  width: 24px;
+  height: 24px;
+}
+
+.showAllCategory {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.descCategory {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #606060;
+}
+
+.buttonIntoShopingCarts {
+  background-color: transparent;
+  border: 1px solid #70c05b;
+  padding: 8px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #70c05b;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.topContainerCategory {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.simplePriceForOthers {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  padding-bottom: 18px;
+}
+
+/* cardArticle */
+
+.cardArticle {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 376px;
+  height: 420px;
+}
+
+.cardArticle :nth-child(1) {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.buttonArticle {
+  border: none;
+  padding: 8px 20px;
+  gap: 8px;
+  border-radius: 4px;
+  background-color: #e5ffde;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #70c05b;
+}
+
+.contentofArticle {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.contentofArticle :nth-child(1) {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #8f8f8f;
+}
+
+.contentofArticle :nth-child(2) {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #414141;
+}
+
+.contentofArticle :nth-child(3) {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #414141;
+}
+
+.buttonIntoShopingCartsAdd {
+  background-color: #ff6633;
+  border: none;
+  padding: 8px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .bottomContainerCategory {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 678px) {
+  .showAllCategory {
+    display: none;
+  }
+
+  
+}
+
+@media (max-width: 678px) {
+  .cardArticle {
+    width: 300px;
+  }
+}
